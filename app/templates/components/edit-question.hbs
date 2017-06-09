@@ -1,1 +1,10 @@
 {{yield}}
+{{#if showEdit}}
+  <form>
+    <label for="question"></label>
+    {{input value=editquestion id="editquestion"}}
+    <button {{action 'editQuestion'}}>Submit</button>
+  </form>
+{{else}}
+<button {{action 'showEdit'}}>Edit</button>
+{{/if}}

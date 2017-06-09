@@ -9,6 +9,9 @@ export default Ember.Component.extend({
         question: this.get('question')
       }
       this.sendAction('postQuestion1', params);
+      this.set('author', '');
+      this.set('subject', '');
+      this.set('question', '');
     }
   }
 });
