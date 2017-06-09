@@ -1,3 +1,4 @@
+{{new-question saveQuestion="saveQestion1"}}
 {{#each model as |question|}}
   <ul>
     <li>
@@ -5,9 +6,12 @@
           <h3>{{question.subject}}</h3>
           {{question.author}}
           {{question.date}}
+          <p>{{question.question}}</p>
+          <!-- {{#link-to 'show'}}Show{{/link-to}} -->
       </ul>
     </li>
   </ul>
 
 {{/each}}
-{{yield}}
+
+<!-- {{yield}} -->
