@@ -16,6 +16,14 @@ module.exports = function(environment) {
         Date: false
       }
     },
+    firebase: {
+      apiKey: "AIzaSyBw4u4eFLWsdw0iJbFJNLX96_vP6fURoao",
+      authDomain: "mc-3overflow.firebaseapp.com",
+      databaseURL: "https://mc-3overflow.firebaseio.com",
+      projectId: "mc-3overflow",
+      storageBucket: "mc-3overflow.appspot.com",
+      messagingSenderId: "939903994760"
+    },
 
     APP: {
       // Here you can pass flags/options to your application instance
