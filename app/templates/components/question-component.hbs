@@ -1,0 +1,13 @@
+{{#each model as |question|}}
+  <ul>
+    <li>
+      <ul>
+          <h3>{{question.subject}}</h3>
+          {{question.author}}
+          {{question.date}}
+      </ul>
+    </li>
+  </ul>
+
+{{/each}}
+{{yield}}
