@@ -1,1 +1,11 @@
-{{yield}}
+<!-- {{yield}} -->
+<h2>Post Question</h2>
+<form>
+  <label for="author">Author:</label>
+  {{input value=author id="author"}}
+  <label for="subject">Subject:</label>
+  {{input value=subject id="subject"}}
+  <label for="question">Question:</label>
+  {{input value=question id="question"}}
+  <button {{action 'postQuestion'}}>Ask</button>
+</form>
