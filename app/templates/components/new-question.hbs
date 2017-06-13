@@ -1,1 +1,8 @@
-{{yield}}
+<form class="form-group">
+    <div class="form-group">
+        {{input value=question id='question' placeholder='Enter New Question'}}
+        {{input value=author id='author' placeholder='Username'}}
+        {{input value=date id='date' placeholder='Date'}}
+    </div>
+    <button class="btn btn-info" {{action 'newQue'}}>Ask</button>
+</form>
