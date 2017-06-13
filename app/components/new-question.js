@@ -8,7 +8,7 @@ export default Ember.Component.extend({
                 author: this.get('author'),
                 date: this.get('date'), 
             };
-            alert(params.question);
+            this.sendAction('newQue1', params);
         }
     }
 });
