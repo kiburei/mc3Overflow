@@ -9,6 +9,9 @@ export default Ember.Component.extend({
                 date: this.get('date'), 
             };
             this.sendAction('newQue1', params);
+            this.set('question', '');
+            this.set('author', '');
+            this.set('date', '');
         }
     }
 });
