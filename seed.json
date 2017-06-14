@@ -1,22 +1,27 @@
 { "questions": [{
-    "subject": "How to nest ember routes?",
+    "subject": "What is Noob?",
     "author": "Noob",
-    "date": "05/06/2017"
+    "date": "05/06/2017",
+    "question": "I figure I'm a noob but what really is noob? where did the term come from?"
+  }, {
+    "subject": "Clash of the Phages",
+    "author": "Doc",
+    "date": "05/06/2017",
+    "question": "Got bacteria from my socks and put them with bacteria in the sink. I expected a big war but nothing :("
+  }, {
+    "subject": "Siri is not being friendly",
+    "author": "Paul",
+    "date": "05/06/2017",
+    "question": "We got to the point siri calls me boyfriend so thats progress but she woun't help my get ready for school. What's that about?"
   }, {
     "subject": "How to nest ember routes?",
-    "author": "Noob",
-    "date": "05/06/2017"
+    "author": "Betty",
+    "date": "05/06/2017",
+    "question": "Trying to nest dynamic routes inside a static route"
   }, {
-    "subject": "How to nest ember routes?",
-    "author": "Noob",
-    "date": "05/06/2017"
-  }, {
-    "subject": "How to nest ember routes?",
-    "author": "Noob",
-    "date": "05/06/2017"
-  }, {
-    "subject": "How to nest ember routes?",
-    "author": "Noob",
-    "date": "05/06/2017"
+    "subject": "Stuck Comb",
+    "author": "Newton",
+    "date": "15/01/2017",
+    "question": "I have an afrom comb stuck in my hair. What to I do?"
   }]
 }

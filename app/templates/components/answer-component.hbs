@@ -1,0 +1,9 @@
+<!-- {{yield}} -->
+<h2>Answer</h2>
+<form>
+  <label for="author">Author:</label>
+  {{input value=author id="author"}}
+  <label for="answer">Answer:</label>
+  {{input value=answer id="answer"}}
+  <button {{action 'ansQuestion'}}>Answer</button>
+</form>

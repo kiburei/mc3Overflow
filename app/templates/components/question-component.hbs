@@ -1,13 +1,24 @@
+{{new-question postQuestion1="postQuestion2"}}
 {{#each model as |question|}}
   <ul>
     <li>
       <ul>
+<<<<<<< HEAD
           {{#link-to 'question' question.id}}<h3>{{question.subject}}</h3>{{/link-to}}
           Asked by: {{question.author}}
           on {{question.date}}
+=======
+          <h3>{{question.subject}}</h3>
+          {{question.author}}
+          {{question.date}}
+          <p>{{question.question}}</p>
+          {{edit-question editQuestion1="editQuestion2"}}
+          <!-- {{#link-to 'show'}}Show{{/link-to}} -->
+>>>>>>> 4a702e2769be34ed592228f994d01d89c9379ff8
       </ul>
     </li>
   </ul>
 
 {{/each}}
-{{yield}}
+
+<!-- {{yield}} -->
