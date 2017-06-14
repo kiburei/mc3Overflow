@@ -2,7 +2,7 @@
   <ul>
     <li>
       <ul>
-          <h3>{{question.subject}}</h3>
+          {{#link-to 'question' question.id}}<h3>{{question.subject}}</h3>{{/link-to}}
           Asked by: {{question.author}}
           on {{question.date}}
       </ul>
