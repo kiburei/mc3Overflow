@@ -15,6 +15,7 @@ export default Ember.Component.extend({
          this.sendAction('editQue1', question,  params);
         },
         destroy(question) {
+            alert(question);
             if(confirm('Delete this question?')){
                 this.sendAction('destroy1', question);
             }
