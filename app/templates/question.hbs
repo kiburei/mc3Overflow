@@ -1,5 +1,5 @@
 <h2>{{model.subject}}</h2>
 <p>{{model.question}}</p>
 <p>By {{model.author}} posted on {{model.date}} </p>
-{{question-detail editQue1="editQue2" destroy1="destroy2"}}
-{{question-answers newAns1="newAns2" }}
+{{question-detail editQue1="editQue2" destroy1="destroy2" question=model}}
+{{question-answers newAns1="newAns2" question=model}}

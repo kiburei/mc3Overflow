@@ -1,9 +1,9 @@
 {{!--update or delete question here--}}
 
 {{#if editForm}}
-    <h4>Edit</h4>
+    <h4>Edit {{question.subject}}</h4>
     <form>
-        {{input value=question id="question" placeholder=model.question}}
+        {{input value=question id="question" placeholder='edit question'}}
         {{#bs-button type="warning" onClick=(action "editQue" question)}} Submit {{/bs-button}}
     </form>
 {{else}}

@@ -1,9 +1,13 @@
-<form class="form-group">
+<div class="row">
+    <div class="forms"> 
+    <form class="form-group">
     <div class="form-group">
         {{input value=subject id='subject' placeholder='Question Subject'}}
-        {{input value=question id='question' placeholder='Enter New Question'}}
+        {{input value=question id='question' placeholder='Enter New Question' size="50"}}
         {{input value=author id='author' placeholder='Username'}}
         {{input value=date id='date' placeholder='Date'}}
     </div>
     {{#bs-button type="primary" onCLick=(action "newQue")}} Ask {{/bs-button}}
 </form>
+</div>
+</div>

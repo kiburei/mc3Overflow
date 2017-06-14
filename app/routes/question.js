@@ -19,8 +19,12 @@ export default Ember.Route.extend({
             this.transtionTo('index');
         },
         // save new answer as a child of question
-        newAns2() {
-            alert("tmefika");
+        newAns2(params) {
+            var newAns = this.store.creatRecord('answer', params);
+            // attach to parent object
+            var question = params.question;
+            question.get('answers').addObject(newAns);
+            
         }
     }
 });

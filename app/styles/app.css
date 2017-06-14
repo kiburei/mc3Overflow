@@ -1,0 +1,19 @@
+body {
+    margin: 50px;
+    background: #F1DEDE;
+}
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium';
+}
+input {
+    border-radius: 5px;
+    border-style: solid;
+}
+
+.forms {
+    float: left;
+    border-style: solid;
+    border-color: white;
+}
