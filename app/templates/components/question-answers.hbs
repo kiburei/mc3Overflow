@@ -1,4 +1,5 @@
 <form>
-    <p>Post Answer</p>
-   {{!--{{#input value=answer id="answer"}}--}}
+    {{input value=answer id='answer' placeholder='Post new answer'}}
+    {{input value=author id='author' placeholder='username'}}
+    {{#bs-button type="success" onClick=(action 'newAns')}} Post Answer {{/bs-button}}
 </form>
