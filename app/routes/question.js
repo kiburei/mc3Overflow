@@ -17,6 +17,10 @@ export default Ember.Route.extend({
         destroy2(question) {
             question.destroyRecord();
             this.transtionTo('index');
+        },
+        // save new answer as a child of question
+        newAns2() {
+            alert("tmefika");
         }
     }
 });
