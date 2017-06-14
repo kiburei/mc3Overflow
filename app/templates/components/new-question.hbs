@@ -5,5 +5,5 @@
         {{input value=author id='author' placeholder='Username'}}
         {{input value=date id='date' placeholder='Date'}}
     </div>
-    <button class="btn btn-info" {{action 'newQue'}}>Ask</button>
+    {{#bs-button type="primary" onCLick=(action "newQue")}} Ask {{/bs-button}}
 </form>

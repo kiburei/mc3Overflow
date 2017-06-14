@@ -1,2 +1,13 @@
-<h2>Question</h2>
-{{model.subject}}
+{{!--update or delete question here--}}
+
+{{#if editForm}}
+    <h4>Edit</h4>
+    <form>
+        {{input value=question id="question" placeholder=model.question}}
+        {{#bs-button type="warning" onClick=(action "editQue" question)}} Submit {{/bs-button}}
+    </form>
+{{else}}
+    {{#bs-button type="info" onClick=(action "editForm")}}Edit{{/bs-button}}
+{{/if}}
+
+{{#bs-button type="danger" onClick=(action "destroy" question)}}Delete{{/bs-button}}
