@@ -6,6 +6,9 @@
 </form>
 </div>
 {{!--List Answers--}}
-{{#each question.answer as |ans|}}
-    <li>{{ans.answer}} -- {{ans.author}}</li>
-{{/each}}
+<div>
+    {{#each question.answer as |ans|}}
+        <li>{{ans.answer}} -- {{ans.author}}</li>
+        <li><button>Yes</button><button>No</button></li>
+    {{/each}}
+</div>
