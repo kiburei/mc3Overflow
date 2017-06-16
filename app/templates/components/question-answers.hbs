@@ -5,3 +5,7 @@
     {{#bs-button type="success" onClick=(action 'newAns')}} Post Answer {{/bs-button}}
 </form>
 </div>
+{{!--List Answers--}}
+{{#each question.answer as |ans|}}
+    <li>{{ans.answer}} -- {{ans.author}}</li>
+{{/each}}
