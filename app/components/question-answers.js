@@ -11,6 +11,9 @@ export default Ember.Component.extend({
             this.set('answer', '');
             this.set('author', '');
             this.sendAction('newAns1', params);
+        },
+        upVote(ans) {
+            // increment vote by 1
         }
     }
 });

@@ -9,6 +9,6 @@
 <div>
     {{#each question.answer as |ans|}}
         <li>{{ans.answer}} -- {{ans.author}}</li>
-        <li><button>Yes</button><button>No</button></li>
+        <li><button {{action "upVote" ans}} >Yes</button><button>No</button></li>
     {{/each}}
 </div>
