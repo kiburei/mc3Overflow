@@ -1,13 +1,13 @@
 {{!--update or delete question here--}}
 
 {{#if editForm}}
-    <h4>Edit {{question.subject}}</h4>
+    <h4>Edit {{que.subject}}</h4>
     <form>
-        {{input value=question id="question" placeholder='edit question'}}
-        {{#bs-button type="warning" onClick=(action "editQue" question)}} Submit {{/bs-button}}
+        {{input value=question id="question" placeholder=que.question}}
+        <button class="btn btn-primary" {{action "editQue" que}} >Submit</button>
     </form>
 {{else}}
-    {{#bs-button type="info" onClick=(action "editForm")}}Edit{{/bs-button}}
+    <button class="btn btn-warning" {{action "editForm"}} >Edit</button>
 {{/if}}
 
-{{#bs-button type="danger" onClick=(action "destroy" question)}}Delete{{/bs-button}}
+{{#bs-button type="danger" onClick=(action "destroy" que)}}Delete{{/bs-button}}

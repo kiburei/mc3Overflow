@@ -6,18 +6,17 @@ export default Ember.Component.extend({
         editForm() {
             this.set('editForm', true);
         },
-        editQue(question) {
+        editQue(que) {
          var params = {
              question: this.get('question'),
          };
          this.set('question', '');
          this.set('editForm', false);
-         this.sendAction('editQue1', question,  params);
+         this.sendAction('editQue1', que,  params);
         },
-        destroy(question) {
-            alert(question);
+        destroy(que) {
             if(confirm('Delete this question?')){
-                this.sendAction('destroy1', question);
+                this.sendAction('destroy1', que);
             }
         }
     }

@@ -5,26 +5,25 @@ export default Ember.Route.extend({
         return this.store.findRecord('question', params.question_id);
     },
     actions: {
-        editQue2(question, params) {
-            Object.keys(params).forEach(function(key) {
-    if(params[key]!==undefined) {
-      question.set(key,params[key]);
-    }
-  });
-            question.save();
+        editQue2(que, params) {
+            Object.keys(params).forEach(function (key) {
+                if (params[key] !== undefined) {
+                    que.set(key, params[key]);
+                }
+            });
+            que.save();
             this.transtionTo('index');
         },
-        destroy2(question) {
-            question.destroyRecord();
-            this.transtionTo('index');
+        destroy2(que) {
+            que.destroyRecord();
+            this.transitionTo('index');
         },
         // save new answer as a child of question
         newAns2(params) {
             var newAns = this.store.creatRecord('answer', params);
-            // attach to parent object
             var question = params.question;
             question.get('answers').addObject(newAns);
-            
+
         }
     }
 });

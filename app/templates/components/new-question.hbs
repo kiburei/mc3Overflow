@@ -7,7 +7,7 @@
         {{input value=author id='author' placeholder='Username'}}
         {{input value=date id='date' placeholder='Date'}}
     </div>
-    {{#bs-button type="primary" onCLick=(action "newQue")}} Ask {{/bs-button}}
+    <button class="btn btn-info" {{action 'newQue'}}>Ask</button>
 </form>
 </div>
 </div>
