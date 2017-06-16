@@ -20,9 +20,13 @@ export default Ember.Route.extend({
         },
         // save new answer as a child of question
         newAns2(params) {
-            var newAns = this.store.creatRecord('answer', params);
+            var newAns = this.store.createRecord('answer', params);
             var question = params.question;
-            question.get('answers').addObject(newAns);
+            question.get('answer').addObject(newAns);
+            newAns.save().then(function() {
+                return question.save();
+            });
+            this.transitionTo('question', question);
 
         }
     }
