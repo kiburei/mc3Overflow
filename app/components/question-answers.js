@@ -15,13 +15,13 @@ export default Ember.Component.extend({
         },
         upVote(ans) {
             var vote = Number(ans.get('vote'));
-            vote++;
+            vote + 1;
             ans.set('vote', vote);
             this.sendAction('upVote1', ans);            
         },
         downVote(ans) {
             var vote = Number(ans.get('vote'));
-            vote--;
+            vote - 1;
             ans.set('vote', vote);
             this.sendAction('downVote1', ans);
         }

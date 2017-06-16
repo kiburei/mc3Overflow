@@ -4,7 +4,8 @@
       <ul>
           {{#link-to 'question' question.id}}<h3>{{question.subject}}</h3>{{/link-to}}
           Asked by: {{question.author}}
-          on {{question.date}}
+          on {{question.date}} Answered <em>{{answers question}}</em> time(s)
+           
       </ul>
     </li>
   </ul>
