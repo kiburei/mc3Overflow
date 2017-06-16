@@ -18,6 +18,12 @@ export default Ember.Component.extend({
             vote++;
             ans.set('vote', vote);
             this.sendAction('upVote1', ans);            
+        },
+        downVote(ans) {
+            var vote = Number(ans.get('vote'));
+            vote--;
+            ans.set('vote', vote);
+            this.sendAction('downVote1', ans);
         }
     }
 });

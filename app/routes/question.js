@@ -30,6 +30,9 @@ export default Ember.Route.extend({
         },
         upVote2(ans){
             ans.save();
+        },
+        downVote2(ans) {
+            ans.save();
         }
     }
 });
