@@ -27,7 +27,9 @@ export default Ember.Route.extend({
                 return question.save();
             });
             this.transitionTo('question', question);
-
+        },
+        upVote2(ans){
+            ans.save();
         }
     }
 });

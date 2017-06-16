@@ -1,4 +1,4 @@
-<div class="forms">
+<div>
     <form>
     {{input value=answer id='answer' placeholder='Post new answer'}}
     {{input value=author id='author' placeholder='username'}}
@@ -8,7 +8,8 @@
 {{!--List Answers--}}
 <div>
     {{#each question.answer as |ans|}}
-        <li>{{ans.answer}} -- {{ans.author}}</li>
-        <li><button {{action "upVote" ans}} >Yes</button><button>No</button></li>
+        <li>{{ans.vote}} {{ans.answer}} -- {{ans.author}} 
+                <button {{action 'upVote' ans}} >Up Vote</button>
+        </li>
     {{/each}}
 </div>
